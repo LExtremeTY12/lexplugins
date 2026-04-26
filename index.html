@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LEX Store — Professional Minecraft plugin store." />
+  <title>LEX Store — Minecraft Plugins</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#inicio" aria-label="Go to home" data-i18n-aria="nav.homeAria">
+        <img src="assets/avatarHead.png" alt="LEX Store" class="brand-logo" />
+        <span>
+          <strong>LEX Store</strong>
+          <small data-i18n="brand.subtitle">Minecraft Plugins</small>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" data-i18n-aria="nav.menuAria">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#produtos" data-i18n="nav.products">Products</a>
+        <a href="#vantagens" data-i18n="nav.benefits">Benefits</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <div class="lang-switch" role="group" aria-label="Language selector" data-i18n-aria="nav.languageAria">
+          <button class="lang-btn" type="button" data-lang-btn="en">EN</button>
+          <button class="lang-btn" type="button" data-lang-btn="pt">PT</button>
+        </div>
+        <a class="nav-cta" href="https://discord.gg/cVBFu43g9G" target="_blank" rel="noreferrer">Discord</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="floating-blocks" id="floatingBlocks" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="pill pulse-pill">
+            <span class="status-dot"></span>
+            <span data-i18n="hero.pill">Premium Minecraft plugin store</span>
+          </div>
+
+          <h1 data-i18n="hero.title">Professional plugins to level up your Minecraft server.</h1>
+          <p class="hero-text" data-i18n="hero.text">
+            LEX Store offers ready-to-use, configurable plugins with support. Buy premium plugins, download free resources, or request custom systems directly through Discord.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary magnetic" href="#produtos">
+              <span data-i18n="hero.productsButton">View products</span>
+              <span>→</span>
+            </a>
+            <a class="btn btn-ghost magnetic" href="https://discord.gg/cVBFu43g9G" target="_blank" rel="noreferrer" data-i18n="hero.customButton">
+              Request custom plugin
+            </a>
+          </div>
+
+          <div class="stats">
+            <div class="stat-card reveal delay-1">
+              <strong>25+</strong>
+              <span data-i18n="stats.plugins">ready plugins</span>
+            </div>
+            <div class="stat-card reveal delay-2">
+              <strong>1.20+</strong>
+              <span data-i18n="stats.compatibility">compatibility</span>
+            </div>
+            <div class="stat-card reveal delay-3">
+              <strong>24h</strong>
+              <span data-i18n="stats.support">fast support</span>
+            </div>
+            <div class="stat-card reveal delay-4">
+              <strong>100%</strong>
+              <span data-i18n="stats.configurable">configurable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal delay-2">
+          <div class="hero-card tilt-card" id="heroTilt">
+            <img src="assets/minecraft-background.png" alt="Minecraft landscape" data-i18n-alt="hero.imageAlt" />
+            <div class="hero-card-overlay"></div>
+            <div class="float-panel panel-a">
+              <span class="panel-icon">⚙️</span>
+              <small data-i18n="hero.statusSmall">Status</small>
+              <strong data-i18n="hero.statusStrong">Online</strong>
+            </div>
+            <div class="float-panel panel-b">
+              <span class="panel-icon">⚡</span>
+              <small data-i18n="hero.performanceSmall">Performance</small>
+              <strong data-i18n="hero.performanceStrong">Ultra</strong>
+            </div>
+            <div class="hero-progress">
+              <div>
+                <strong>LEX Store</strong>
+                <span data-i18n="hero.progressText">Plugins 1.20+</span>
+              </div>
+              <div class="progress-bar"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vantagens">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="benefits.eyebrow">Why choose LEX Store?</span>
+          <h2 data-i18n="benefits.title">A store built to sell plugins with confidence.</h2>
+          <p data-i18n="benefits.text">Modern design, smooth animations, a clean catalog, and a premium presentation for every product.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">🛒</span>
+            <h3 data-i18n="features.flex.title">Flexible purchase or download</h3>
+            <p data-i18n="features.flex.text">Each product can open its own link or send the customer directly to Discord.</p>
+          </article>
+          <article class="feature-card reveal delay-1">
+            <span class="feature-icon">🧱</span>
+            <h3 data-i18n="features.minecraft.title">Professional Minecraft style</h3>
+            <p data-i18n="features.minecraft.text">A visual identity inspired by Minecraft, with a clean and premium interface.</p>
+          </article>
+          <article class="feature-card reveal delay-2">
+            <span class="feature-icon">🔎</span>
+            <h3 data-i18n="features.catalog.title">Organized catalog</h3>
+            <p data-i18n="features.catalog.text">Search, category filters, and animated cards help customers find the right plugin.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section products-section" id="produtos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="products.eyebrow">Catalog</span>
+          <h2 data-i18n="products.title">Featured products</h2>
+          <p data-i18n="products.text">Premium plugins can redirect to Discord or an external checkout. Free products can use a download button.</p>
+        </div>
+
+        <div class="catalog-toolbar reveal">
+          <label class="search-box" for="searchInput">
+            <span>🔎</span>
+            <input id="searchInput" type="search" placeholder="Search plugin..." autocomplete="off" data-i18n-placeholder="products.searchPlaceholder" />
+          </label>
+          <div class="category-filters" id="categoryFilters" aria-label="Category filters" data-i18n-aria="products.filtersAria"></div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+        <p class="empty-state" id="emptyState" data-i18n="products.empty">No products found.</p>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div>
+            <span class="eyebrow" data-i18n="cta.eyebrow">Official Discord</span>
+            <h2 data-i18n="cta.title">Need a custom plugin?</h2>
+            <p data-i18n="cta.text">Talk to LEX Store on Discord for quotes, support, manual purchases, or exclusive plugins for your server.</p>
+          </div>
+          <a class="btn btn-light magnetic" href="https://discord.gg/cVBFu43g9G" target="_blank" rel="noreferrer">
+            <span data-i18n="cta.button">Join Discord</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-container">
+        <div class="section-heading reveal">
+          <span class="eyebrow" data-i18n="faq.eyebrow">Quick questions</span>
+          <h2 data-i18n="faq.title">Frequently asked questions</h2>
+          <p data-i18n="faq.text">A simple section to explain purchases, downloads, and support.</p>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <article class="faq-item reveal active">
+            <button type="button"><strong data-i18n="faq.buy.q">How do I buy a plugin?</strong><span>+</span></button>
+            <div class="faq-content"><p data-i18n="faq.buy.a">Click the product button. It can open a purchase/download link or send you to the LEX Store Discord.</p></div>
+          </article>
+          <article class="faq-item reveal delay-1">
+            <button type="button"><strong data-i18n="faq.custom.q">Can I request custom plugins?</strong><span>+</span></button>
+            <div class="faq-content"><p data-i18n="faq.custom.a">Yes. Use the Discord button to discuss requests, pricing, deadlines, and technical details.</p></div>
+          </article>
+          <article class="faq-item reveal delay-2">
+            <button type="button"><strong data-i18n="faq.support.q">Do plugins include support?</strong><span>+</span></button>
+            <div class="faq-content"><p data-i18n="faq.support.a">Support availability depends on the product. For questions before buying, contact LEX Store through Discord.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#inicio">
+        <img src="assets/avatarHead.png" alt="LEX Store" class="brand-logo" />
+        <span>
+          <strong>LEX Store</strong>
+          <small data-i18n="footer.subtitle">Professional Minecraft plugins</small>
+        </span>
+      </a>
+      <p data-i18n-html="footer.rights">© <span id="year"></span> LEX Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
