@@ -71,7 +71,9 @@ const TRANSLATIONS = {
     "categories.security": "Security",
     "categories.utilities": "Utilities",
     "categories.economy": "Economy",
-    "categories.progression": "Progression"
+    "categories.progression": "Progression",
+    "categories.fun": "Fun",
+    "categories.adventure": "Adventure"
   },
   pt: {
     "meta.title": "LEX Store — Plugins Minecraft",
@@ -142,6 +144,9 @@ const TRANSLATIONS = {
     "categories.security": "Segurança",
     "categories.utilities": "Utilidades",
     "categories.economy": "Economia",
+    "categories.progression": "Progressão",
+    "categories.fun": "Diversão",
+    "categories.adventure": "Aventura",
   }
 };
 
@@ -149,7 +154,7 @@ const PRODUCTS = [
   {
     id: 1,
     name: "LexGauntlet",
-    categoryKey: "utilities",
+    categoryKey: "fun",
     price: { en: "Free", pt: "Grátis" },
     type: "free",
     badgeKey: "free",
@@ -209,7 +214,7 @@ const PRODUCTS = [
   {
     id: 4,
     name: "LexTPA",
-    categoryKey: "utilities",
+    categoryKey: "adventure",
     price: { en: "Free", pt: "Grátis" },
     type: "free",
     badgeKey: "free",
