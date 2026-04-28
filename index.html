@@ -215,6 +215,33 @@
     </div>
   </footer>
 
+
+  <div class="chatbot-widget" id="chatbotWidget">
+    <button class="chatbot-toggle" id="chatbotToggle" type="button" aria-label="Open assistant" data-i18n-aria="chat.openAria">
+      <span class="chatbot-toggle-icon">💬</span>
+      <span class="chatbot-toggle-pulse" aria-hidden="true"></span>
+    </button>
+
+    <section class="chatbot-window" id="chatbotWindow" aria-hidden="true" aria-label="LEX Assistant" data-i18n-aria="chat.windowAria">
+      <header class="chatbot-header">
+        <div class="chatbot-avatar" aria-hidden="true">AI</div>
+        <div>
+          <strong data-i18n="chat.title">LEX Assistant</strong>
+          <small><span class="chatbot-online-dot"></span><span data-i18n="chat.subtitle">Usually replies instantly</span></small>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" type="button" aria-label="Close chat" data-i18n-aria="chat.closeAria">×</button>
+      </header>
+
+      <div class="chatbot-messages" id="chatbotMessages" aria-live="polite"></div>
+      <div class="chatbot-quick" id="chatbotQuickReplies"></div>
+
+      <form class="chatbot-form" id="chatbotForm">
+        <input id="chatbotInput" type="text" autocomplete="off" maxlength="240" placeholder="Type your question..." data-i18n-placeholder="chat.placeholder" />
+        <button type="submit" aria-label="Send message" data-i18n-aria="chat.sendAria">➤</button>
+      </form>
+    </section>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
